@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lusitana', serif;
+    font-family: 'Roboto Slab', serif;
+}
+
+html, body{
+    height: 100%;
+}
+
+header{
+    background-color: #0B1524;
+    padding: 15px 0;
+    border-bottom: 1px solid #ffffff;
+}
+
+header .nav .nav-link{
+    color: #ffffff;
+    letter-spacing: 1px;
+}
+
+section.apresentacao{
+    background-color: #0B1524;
+    padding: 50px 0;
+}
+
+.apresentacao h2{
+    color: #e6e6e6;
+}
+
+.apresentacao .img-apresentacao{
+    width: 100%;
+    max-width: 800px;
+    /* height: 300px; */
+    
+}
+
+.img-apresentacao .img-apresentacao-wrapper{
+    position: relative;
+    width: 100%;
+    padding-top: 50%;
+}
+
+.img-apresentacao-wrapper .img-content{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/img-apresentacao.png);
+    background-position: center;
+    background-size: contain;
+    
+    border-radius: 50%;
+}
+
+section.apresentacao-paralax{
+    position: relative;
+    width: 100%;
+    height: 400px;
+    background-image: url(../images/img-notebook-paralax.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.apresentacao-paralax .overlay-paralax{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.apresentacao-paralax{
+    color: #ffffff;
+}
+
+.apresentacao-paralax p{
+    max-width: 500px;
+    font-size: 18px;
+    font-weight: lighter;
+}
+
+.contatos p a{
+    display: inline-block;
+    margin-top: 10px;
+    font-size: 15px;
+    text-decoration: none;
+    background-color: #2D1A41;
+    border-radius: 5px;
+    color: #ffffff;
+    padding: 4px 7px;
+}
+
+footer{
+    background-color: #2D1A41;
+    color: #ffffff;
+    font-size: 1rem;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+@media screen and (max-width: 480px){
+    section.apresentacao-paralax{
+        height: 450px;
+    }
+}
